@@ -67,11 +67,13 @@ def runner
   card_total = initial_round
   display_card_total(card_total)
   hit?(card_total)
-  if card_total < 21 do
-    display_card_total(card_total)
-    hit?(card_total)
-  else
-    end_game
+  loop do
+    if card_total < 21 do
+      display_card_total
+      hit?(card_total)
+    else
+    end_game  
+    end
   end
   # code runner here
 end
