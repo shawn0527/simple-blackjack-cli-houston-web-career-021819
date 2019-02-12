@@ -71,7 +71,7 @@ def runner
     display_card_total(card_total)
     new_card_total = card_total + display_card_total(card_total)
   end
-  display_card_total(new_card_total)
-end_game(card_total)
+  display_card_total(new_card_totall)
+  end_game(card_total)
   # code runner here
 end
