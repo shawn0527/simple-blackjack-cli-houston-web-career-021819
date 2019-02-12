@@ -10,6 +10,7 @@ end
 
 def display_card_total(card_total)
   puts "Your cards add up to #{card_total}"
+  return card_total
   # code #display_card_total here
 end
 
@@ -68,8 +69,9 @@ def runner
   until card_total >= 21 do
     hit?(card_total)
     display_card_total(card_total)
-    card_total = card_total + hit?(card_total)
+    card_total = card_total + 
   end
+  
 end_game(card_total)
   # code runner here
 end
